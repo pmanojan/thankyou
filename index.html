@@ -921,7 +921,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
+            <a href="https://pmanojan.github.io/pemaraj-manojan-portfolio/" class="nav-logo">
                 <div class="nav-logo-icon">PM</div>
                 <div class="nav-logo-text">Manojan<span>.dev</span></div>
             </a>
@@ -1004,11 +1004,11 @@
 
             <!-- Action Buttons -->
             <div class="thank-you-actions">
-                <a href="https://pmanojan.github.io/pemaraj-manojan-portfolio" class="btn btn-primary">
+                <a href="https://pmanojan.github.io/pemaraj-manojan-portfolio/" class="btn btn-primary">
                     <svg class="icon" style="width:18px;height:18px;"><use href="#i-home"/></svg>
                     Back to Portfolio
                 </a>
-                <a href="index.html#contact" class="btn btn-secondary">
+                <a href="https://pmanojan.github.io/pemaraj-manojan-portfolio/#contact" class="btn btn-secondary">
                     <svg class="icon" style="width:18px;height:18px;"><use href="#i-send"/></svg>
                     Send Another Message
                 </a>
@@ -1029,13 +1029,13 @@
             <div class="social-section">
                 <div class="social-title">Let's Stay Connected</div>
                 <div class="social-links">
-                    <a href="https://linkedin.com" class="social-link" title="LinkedIn" target="_blank" rel="noopener">
+                    <a href="https://www.linkedin.com/in/pemarajmanojan/" class="social-link" title="LinkedIn" target="_blank" rel="noopener">
                         <svg class="icon"><use href="#i-linkedin"/></svg>
                     </a>
-                    <a href="https://github.com" class="social-link" title="GitHub" target="_blank" rel="noopener">
+                    <a href="https://github.com/pmanojan" class="social-link" title="GitHub" target="_blank" rel="noopener">
                         <svg class="icon"><use href="#i-github"/></svg>
                     </a>
-                    <a href="https://facebook.com" class="social-link" title="Facebook" target="_blank" rel="noopener">
+                    <a href="https://www.facebook.com/profile.php?id=100036599113712" class="social-link" title="Facebook" target="_blank" rel="noopener">
                         <svg class="icon"><use href="#i-facebook"/></svg>
                     </a>
                     <a href="https://instagram.com" class="social-link" title="Instagram" target="_blank" rel="noopener">
@@ -1052,7 +1052,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <p class="footer-text">© 2025 <span>Pemaraj Manojan</span>. All rights reserved.</p>
+            <p class="footer-text">© 2026 <span>Pemaraj Manojan</span>. All rights reserved.</p>
         </div>
     </footer>
 
@@ -1202,17 +1202,18 @@
             setTimeout(createConfetti, 1200);
         })();
 
-        // ===== COUNTDOWN REDIRECT =====
+        // ===== COUNTDOWN REDIRECT (FIXED URL) =====
         (function() {
             let count = 15;
             const countEl = document.getElementById('countdownNumber');
+            const redirectUrl = 'https://pmanojan.github.io/pemaraj-manojan-portfolio/';
 
             const timer = setInterval(() => {
                 count--;
                 if (countEl) countEl.textContent = count;
                 if (count <= 0) {
                     clearInterval(timer);
-                    window.location.href = 'index.html';
+                    window.location.href = redirectUrl;
                 }
             }, 1000);
         })();
